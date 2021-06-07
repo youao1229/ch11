@@ -1,0 +1,16 @@
+spring:
+  profiles: dev
+  application:
+    name: abcms-eurekaServer-config
+
+server:
+  port: 8001
+  
+eureka:
+  instance:
+    hostname: eureka8001.com
+   client:
+     register-with-eureka: false
+     fetch-registry: false
+     service-url:
+       defaultZone: http://localhost:8001/eureka
